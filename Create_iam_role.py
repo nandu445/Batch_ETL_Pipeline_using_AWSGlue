@@ -67,6 +67,15 @@ glue_policy = {
                 "arn:aws:glue:*:024848463817:database/ecommerce_sales_database",
                 "arn:aws:glue:*:024848463817:table/ecommerce_sales_database/*"
             ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "glue:GetConnection"
+            ],
+            "Resource": [
+                "arn:aws:glue:us-east-2:024848463817:connection/RedshiftEcommerceConnection"
+            ]
         }
     ]
 }
@@ -92,8 +101,8 @@ redshift_policy = {
                 "redshift:GetClusterCredentials"
             ],
             "Resource": [
-                "arn:aws:redshift:us-east-2:024848463817:namespace:01454ec5-8f62-4994-a425-4dc4bf48ca7b",
-                "arn:aws:redshift:us-east-2:024848463817:namespace:01454ec5-8f62-4994-a425-4dc4bf48ca7b/*"
+                "arn:aws:redshift:us-east-2:024848463817:namespace:bf960ccc-2d98-43c8-89da-1c542a197b98",
+                "arn:aws:redshift:us-east-2:024848463817:namespace:bf960ccc-2d98-43c8-89da-1c542a197b98/*"
             ]
         }
     ]
