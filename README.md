@@ -28,6 +28,18 @@ Create IAM role for redshift, then create a cluster. Create a table in the requi
 6.	Create and run Glue ETL Job that executes the script from S3
 
 Repository Structure:
+1. Customer.csv, Product.csv, Order.csv	: Raw data files
+2. upload_sales_data_s3.py : Creates an s3 bucket and uploads raw data into it
+3. Create_IAMRole_Redshift.py :	Creates IAM role for Redshift
+4. Create_Redshift_Cluster.py	: Creates redshift cluster
+5. Create_Table_Redshift.py	: Creates a table in redshift
+6. Create_iam_role.py	: Creates IAM role for Glue to access S3, Glue and Redshift
+7. Create_Glue_Crawler.py	: Create and run Glue Crawler
+8. Sales_etl_script.py	: Script for applying transformations on data
+9. Upload_GlueETL_Script.py :	Upload the script to S3 bucket
+10. Create_Glue_Job.py :	Create and run Glue ETL Job
 
+Conclusion - 
+Built a batch etl pipeline that successfully transforms data from s3 bucket and load into a table in redshift cluster.
 
 
