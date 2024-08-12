@@ -121,11 +121,8 @@ redshift_options = {
 # Write to Redshift
 response = glueContext.write_dynamic_frame.from_jdbc_conf(
     frame = Final_dyf,
-    catalog_connection = "RedshiftEcommerceConnection",
-    connection_options = {
-        "dbtable": "ecommerce_orders",
-        "database": "dev_ecommerce"
-    },
+    catalog_connection = "",
+    connection_options = redshift_options,
     redshift_tmp_dir = "s3://ecommerce-sales-etl-bucket/temp/"
 )
 
