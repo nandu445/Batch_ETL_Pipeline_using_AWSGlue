@@ -42,4 +42,22 @@ Repository Structure:
 Conclusion - 
 Built a batch etl pipeline that successfully transforms data from s3 bucket and load into a table in redshift cluster.
 
+Contributions:
+Nandini:
+1. S3 Bucket Creation and Loading Data: Created an S3 bucket and uploaded the raw sales data to this bucket.
+2. IAM Role Creation: Created an IAM role with the necessary permissions for the Glue and Redshift services.
+3. Glue Script Development: Written an initial Glue script to perform basic data transformation.
+Krishna Priya:
+1. Glue Crawler Setup: Created a Glue Crawler to catalog the data stored in S3.
+2. Redshift Cluster Setup: Set up a Redshift cluster for storing the transformed sales data.
+3.Redshift Table Creation: Created tables in Redshift to store the data.
+4. Glue Script Development:  modified the Glue script to load data into Redshift.
+Kaveri:
+1. Glue Script Development: Finalized the Glue script and added transformations.
+2. Glue Job Creation: Created and configured a Glue job to run the script.
+3. Pushing to GitHub: Pushed all the code, scripts, and configuration files to the GitHub repository.
+Together Work:
+The presentation (PPT) preparation was a collaborative effort by Krishna Priya, Nandini, and Kaveri. Together, we had designed the slides, explained the architecture, and included relevant diagrams, screenshots, and explanations for each component of the ETL pipeline.
+
+
 
